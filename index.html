@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Simple Pendulam</title>
+</head>
+<body>
+    <h1 class="title main-title">SIMPLE PENDULUM</h1>
+
+    <div class="container">
+        <div class="container-left">
+            <canvas id="canvas"></canvas>
+            <div class="result">
+                <h6 class="title sub-title">RESULT</h3>
+                <hr />
+                <h3 class="">Time Period(T): <span id="Tp"></span> </h3>
+                <h3 class="">Natural Frequency(rad/s): <span id="Frs"></span></h3>
+                <h3 class="">Natural Frequency(Hz): <span id="Fhz"></span></h3>
+            </div>
+        </div>
+
+        <div class="container-right">
+            <div class="variables">
+                <h6 class="title sub-title">VARIABLES</h3>
+                <label for="fname">Length(mm):</label><br>
+                <input type="text" id="length" value="100" name="length">
+            </div>
+            <div class="control">
+                <h6 class="title sub-title">CONTROLS</h3>
+                <button id="start" type="button">Start</button>
+                <button id="stop" type="button">Stop</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="js/main.js"></script>
+</html>
